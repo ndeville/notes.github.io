@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Base -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Pelican" />
+    <meta name="author" content="Nic Deville">
+
+<!-- Title -->
+<title>Setting up a Sales function from scratch | Nic's notes</title>
+<meta name="og:title" content="Setting up a Sales function from scratch | Nic's notes"/> <!-- 40 characters for mobile and 60 for desktop -->
+<link rel="canonical" href="https://notes.nicolasdeville.com/b2b-sales/setting-up-sales" />
+<meta name="twitter:title" content="Setting up a Sales function from scratch | Nic's notes" /> <!-- max. 70 characters -->
+
+<meta name="description" content="when only inbound & PLG drove the business so far."/>
+<meta property="og:description" content="when only inbound & PLG drove the business so far."/>
+<meta name="twitter:description" content="when only inbound & PLG drove the business so far." /> <!-- max. 200 characters -->
+ 
+
+<meta property="article:published_time" content="2023-03-24 10:09:38.874811+01:00" />
+
+<meta property="article:modified_time" content="2023-03-24 10:09:38.874811+01:00" />
+
+<meta name="robots" content="all, follow" />
+
+<!-- Social -->
+<meta property="og:type" content="article" />
+
+<!-- <meta property="og:description" content="Messy online notebook covering B2B Sales, Leadership, Python programming, Automation, AI and more. I take these notes for myself (and my kids later) - perhaps they can help someone else..." /> min. 2 max. 4 sentences -->
+
+<meta property="og:url" content="https://notes.nicolasdeville.com/b2b-sales/setting-up-sales" /> <!-- canonical URL for your page without session variables, user id parameters or counters -->
+<meta property="og:site_name" content="Nic's notes" />
+<meta name="image" property="og:image" content="https://notes.nicolasdeville.com/images/notes-twitter-image.jpg" /> <!-- at least 600x315 pixels, preferable 1200x630 pixels -->
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@ndeville" />
+
+<meta name="twitter:image" content="https://notes.nicolasdeville.com/images/notes-twitter-image.jpg" /> <!-- aspect ratio of 2:1 with minimum dimensions of 300x157 or maximum of 4096x4096 pixels. Going with 900x471 -->
+
+<!-- Logo -->
+<meta property="og:logo" content="https://notes.nicolasdeville.com/logo.svg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="https://notes.nicolasdeville.com/favicon.ico">
+<link rel="mask-icon" href="https://notes.nicolasdeville.com/favicon.svg" color="#FFFFFF">
+<link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://notes.nicolasdeville.com/favicon.png">
+<link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://notes.nicolasdeville.com/favicon.svg">
+<link rel="fluid-icon" href="https://notes.nicolasdeville.com/favicon.png" title="Nic's notes">
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://notes.nicolasdeville.com/theme/css/main.css" />
+
+<!-- Pagefind -->
+<link href="https://notes.nicolasdeville.com/theme/css/pagefind-ui-nic.css" rel="stylesheet">
+<script src="https://notes.nicolasdeville.com/pagefind/pagefind-ui.js" type="text/javascript"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search" });
+    });
+</script>
+
+
+</head>
+
+<body id="index" class="body">
+        <header id="banner" class="body">
+
+            <div class="logo-and-search">
+                <a href="https://notes.nicolasdeville.com/"><img class="header_image" src="https://notes.nicolasdeville.com/images/nic_notes_header.svg" alt="Nic's notes" width="266"/></a>
+
+                <!-- for Stork seach engine -->
+                <!-- <div class="search-input-block">
+                    <input data-stork="sitesearch" class="search-input" placeholder="Search notes..." autofocus="autofocus"/>
+                    <div data-stork="sitesearch-output"></div>
+                </div> -->
+
+                <!-- Pagefind -->
+                <div class="search-input-block" id="search"></div>
+
+            </div>
+
+            
+
+            <div class="above-navbar">
+                <div class="last_updated">25 Mar 2023 | 15:20</div>
+                <div>
+                    <p class="notes_count">
+                        <a href="https://notes.nicolasdeville.com/tags">by tags</a>
+                        <span style="color:#C74350">|</span>
+                        <a href="https://notes.nicolasdeville.com/2020/">2020</a>
+                        <span style="color:#C74350">|</span>
+                        <a href="https://notes.nicolasdeville.com/2021/">2021</a>
+                        <span style="color:#C74350">|</span>
+                        <a href="https://notes.nicolasdeville.com/2022/">2022</a>
+                        <span style="color:#C74350">|</span>
+                        718 notes
+                    </p>
+                </div>
+            </div>
+
+            <nav><ul>
+                <li><a href="https://notes.nicolasdeville.com/ai/">ai</a></li>
+                <li><a href="https://notes.nicolasdeville.com/apps/">apps</a></li>
+                <li class="active"><a href="https://notes.nicolasdeville.com/b2b-sales/">b2b sales</a></li>
+                <li><a href="https://notes.nicolasdeville.com/books/">books</a></li>
+                <li><a href="https://notes.nicolasdeville.com/careerplaybook/">#careerplaybook</a></li>
+                <li><a href="https://notes.nicolasdeville.com/helpers/">helpers</a></li>
+                <li><a href="https://notes.nicolasdeville.com/home-office/">home office</a></li>
+                <li><a href="https://notes.nicolasdeville.com/interests/">interests</a></li>
+                <li><a href="https://notes.nicolasdeville.com/leadership/">leadership</a></li>
+                <li><a href="https://notes.nicolasdeville.com/learning/">learning</a></li>
+                <li><a href="https://notes.nicolasdeville.com/movies/">movies</a></li>
+                <li><a href="https://notes.nicolasdeville.com/projects/">projects</a></li>
+                <li><a href="https://notes.nicolasdeville.com/python/">python</a></li>
+                <li><a href="https://notes.nicolasdeville.com/random/">random</a></li>
+                <li><a href="https://notes.nicolasdeville.com/research/">research</a></li>
+                <li><a href="https://notes.nicolasdeville.com/startups/">startups</a></li>
+            </ul></nav>
+        </header>
+
+        <!-- index.html injection -->
+<section id="content" class="body">
+    <article>
+        <header>
+            <h1 class="entry-title">
+                <main> <!-- for indexing by Stork -->
+                    <a href="https://notes.nicolasdeville.com/b2b-sales/setting-up-sales" rel="bookmark"
+                    title="Permalink to Setting up a Sales function from scratch">Setting up a Sales function from scratch
+                    </a>
+                </main>
+            </h1>
+            <p class="header_summary">
+                <main> <!-- for indexing by Stork -->
+                    <p>when only inbound &amp; PLG drove the business so far.</p>
+                </main>
+            </p>
+        </header>
+
+        <div class="entry-content">
+<footer class="post-info">
+
+    <p>
+        24 Mar 2023 
+        <span class="separator">|</span> in <a class="link_tag" href="https://notes.nicolasdeville.com/b2b-sales/"><span data-pagefind-filter="category">b2b sales</span></a>
+
+
+        <!-- added 4/7 -->
+        <!-- 		<br />
+        <abbr class="modified" title="2023-03-24T10:09:38.874811+01:00">
+                Updated: 24 Mar 2023
+        </abbr>
+ -->
+
+    </p>
+
+    
+
+</footer>            <!-- for indexing by Stork -->
+            <!-- <main>  -->
+                <div class="toc"><span class="toctitle">Table of Contents</span><ul>
+<li><a href="#implementing-a-sales-stack">Implementing a Sales stack</a><ul>
+<li><a href="#crm">CRM</a></li>
+<li><a href="#knowlege-base">Knowlege base</a></li>
+</ul>
+</li>
+<li><a href="#processes">Processes</a></li>
+<li><a href="#ramp-up-in-a-messy-way">Ramp up in a messy way</a></li>
+<li><a href="#methodology">Methodology</a><ul>
+<li><a href="#prospecting">Prospecting</a></li>
+<li><a href="#qualification">Qualification</a></li>
+<li><a href="#sales">Sales</a></li>
+</ul>
+</li>
+<li><a href="#sales-leader-vp-sales">Sales Leader / VP Sales</a></li>
+<li><a href="#building-the-team">Building the team</a></li>
+<li><a href="#sales-oriented-company-culture">Sales-oriented company culture</a></li>
+<li><a href="#activities-when-starting-from-scratch">Activities when starting from scratch</a><ul>
+<li><a href="#pre-start-work">Pre-start work</a></li>
+<li><a href="#day-1">Day 1</a></li>
+<li><a href="#day-2">Day 2</a></li>
+<li><a href="#day-3">Day 3</a></li>
+<li><a href="#day-4">Day 4</a></li>
+<li><a href="#day-5">Day 5</a></li>
+<li><a href="#todo">TODO</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="wip"><div class="wip_text">👷🏼‍♂️ WORK IN PROGRESS 👷🏼‍♂️</div></div>
+
+<p>A well-oiled Sales function is the engine that drives growth - it can make or break a company.  </p>
+<p>At high-level it consists of:</p>
+<ul>
+<li>a set of processes</li>
+<li>based on methodology(ies)</li>
+<li>led by a Sales leader</li>
+<li>powered by a team of salespeople</li>
+<li>supported by the rest of the company  </li>
+<li>and empowered by Technology</li>
+</ul>
+<p><span class="datestamp">08 Mar 2023</span>   </p>
+<p>I'm assessing an opportunity to work with a company that has been growing organically - just inbound leads &amp; PLG - for the past 5+ years.  </p>
+<p>Here are some of the things to do to setup an Outbound Sales function from scratch:  </p>
+<ul>
+<li>in-depth analysis of Sales to date (to inform strategy &amp; tactics)</li>
+<li>in-depth product understanding (to help identifying key value propositions &amp; USPs)</li>
+<li>in-depth competitive analysis, per competitor (to setup targeted displacement campaigns)</li>
+<li>defining Ideal Customer Profile(s) and Buyer Personas (needed for targeting &amp; personalisation of outbound activities)</li>
+<li>generating prospect lists &amp; segmentation logic (for outbound campaigns)</li>
+<li>generating outbound messaging by persona</li>
+<li>setting up outbound lead generation campaigns (eg email, LinkedIn, communities, etc..) <span class="nic_link"><a href="https://notes.nicolasdeville.com/b2b-sales/outbound" target="_blank">Outbound Lead Generation</a></span></li>
+<li>creating content for outreach &amp; demos (screenshots, videos, etc..) <span class="nic_link"><a href="https://notes.nicolasdeville.com/b2b-sales/demo" target="_blank">How to run Sales Demos</a></span> &amp; <span class="nic_link"><a href="https://notes.nicolasdeville.com/b2b-sales/producing-videos" target="_blank">Producing Sales videos</a></span></li>
+<li>defining a qualification methodology <span class="nic_link"><a href="https://notes.nicolasdeville.com/b2b-sales/qualification-methodologies" target="_blank">B2B Sales Qualification Methodologies</a></span></li>
+<li>nailing down the Discovery process (key to ensure a higher price tag sale &amp; increase close ratio)</li>
+<li>creating &amp; tuning a demo flow to maximise engagement &amp; close ratio </li>
+<li>setting up data structure / CRM (Hubspot?) for deal tracking &amp; forecasting</li>
+<li>creating proposal template(s) &amp; automations</li>
+</ul>
+<h1 id="implementing-a-sales-stack">Implementing a Sales stack</h1>
+<p>These days, it's impossible to run a Sales function without a stack of tools.  </p>
+<p><span class="nic_link"><a href="https://notes.nicolasdeville.com/b2b-sales/stack" target="_blank">What is a B2B Sales stack?</a></span>  </p>
+<p>Though starting from a blank slate, not all tools are needed at the same time.  </p>
+<p>First and foremost, a proper CRM.  </p>
+<h2 id="crm">CRM</h2>
+<p>My go-to is Hubspot <span class="nic_link"><a href="https://notes.nicolasdeville.com/apps/hubspot" target="_blank">Hubspot</a></span>  </p>
+<p>Quick, easy &amp; free to implement - including import of existing data.    </p>
+<h2 id="knowlege-base">Knowlege base</h2>
+<p>This is where all the internal Sales knowledge will reside and be shared. Ideally, part of it can also be shared externally - much easier to send a link to a prospect than a long sub-par blurb of text in an email.   </p>
+<p>My go-to is Notion <span class="nic_link"><a href="https://notes.nicolasdeville.com/apps/notion" target="_blank">Notion</a></span>  </p>
+<h1 id="processes">Processes</h1>
+<h1 id="ramp-up-in-a-messy-way">Ramp up in a messy way</h1>
+<p>While I'm the first one to believe in implementing good processes - needed for scale &amp; efficiency - it's not possible to do so from day 1.  </p>
+<p>In the context of setting up a Sales function from scratch, the goal is to get started quickly - and then iterate.  </p>
+<p>Because it's the doing, that will inform what the processes should be.  </p>
+<p>Spending days, weeks &amp; months to create the perfect processes from the get-go is a waste of time - and building frustration, inefficiencies &amp; "process debt" (you're gonna pay the price sooner or later).    </p>
+<h1 id="methodology">Methodology</h1>
+<h2 id="prospecting">Prospecting</h2>
+<p><span class="nic_link"><a href="https://notes.nicolasdeville.com/b2b-sales/prospecting" target="_blank">Prospecting in B2B Sales</a></span>  </p>
+<p>At first, once the product/service has been proven with direct customers, finding opportunities with leverage is important to grow quicker.  </p>
+<p><span class="nic_link"><a href="https://notes.nicolasdeville.com/b2b-sales/leverage" target="_blank">Finding opportunities with leverage</a></span>  </p>
+<h2 id="qualification">Qualification</h2>
+<p><span class="nic_link"><a href="https://notes.nicolasdeville.com/b2b-sales/qualification-methodologies" target="_blank">B2B Sales Qualification Methodologies</a></span></p>
+<h2 id="sales">Sales</h2>
+<h1 id="sales-leader-vp-sales">Sales Leader / VP Sales</h1>
+<p><span class="nic_link"><a href="https://notes.nicolasdeville.com/leadership/vp-sales" target="_blank">The Role of a VP Sales at a SaaS Company and What Makes One Great</a></span>  &amp;  <span class="nic_link"><a href="https://notes.nicolasdeville.com/leadership/vp-sales" target="_blank">The Role of a VP Sales at a SaaS Company and What Makes One Great</a></span>-playbook   </p>
+<h1 id="building-the-team">Building the team</h1>
+<h1 id="sales-oriented-company-culture">Sales-oriented company culture</h1>
+<h1 id="activities-when-starting-from-scratch">Activities when starting from scratch</h1>
+<p>Here is a day-by-day of my engagement, setting up Sales from scratch in a (so far) PLG, word-of-mouth &amp; inbound-driven only company.  </p>
+<p>Note that each day's bullet points are not necessarily sequential - they are just a list of things I have done or initiated. Some are workstreams that will take a few days or more to complete.   </p>
+<h2 id="pre-start-work">Pre-start work</h2>
+<p>Scrape/collect as much data as possible about the target market. 
+Research the competition.  </p>
+<h2 id="day-1">Day 1</h2>
+<ul>
+<li>setup CRM <span class="nic_link"><a href="https://notes.nicolasdeville.com/apps/hubspot" target="_blank">Hubspot</a></span>  </li>
+<li>finalise initial data collection of companies in TAM</li>
+<li>analyse data from past Sales</li>
+<li>setup knowledge base and start populating it / both existing &amp; new knowledge</li>
+<li>start laying down the Lead Generation Plan  </li>
+</ul>
+<h2 id="day-2">Day 2</h2>
+<ul>
+<li>research past clients &amp; prospects / identify patterns</li>
+<li>define ICP <span class="nic_link"><a href="https://notes.nicolasdeville.com/b2b-sales/icp" target="_blank">How to build an Ideal Customer Profile (ICP)</a></span>   </li>
+<li>define key USP / value propositions  <span class="nic_link"><a href="https://notes.nicolasdeville.com/b2b-sales/usp" target="_blank">Unique Selling Point</a></span></li>
+<li>engage network who could help with insights about / introductions to TAM</li>
+</ul>
+<h2 id="day-3">Day 3</h2>
+<ul>
+<li>finalise initial data ingestion in CRM / both past data (cleaning, etc..) &amp; new data (TAM data collected)  </li>
+<li>start working on scraping process for target companies to identify higher priority targets (those with keywords on website) &amp; collect personalisation data <span class="nic_link"><a href="https://notes.nicolasdeville.com/projects/scrapee" target="_blank">Scrapee</a></span>  !projects!meta-url  </li>
+<li>research a few key target companies in-depth. Find hooks, insights, ways in, etc.. (also informs what to scrape for)  </li>
+<li>start collecting lead contact details within TAM companies (part of the website scraping process if target companies list contacts on their website, else Linekdin, etc..)   </li>
+</ul>
+<h2 id="day-4">Day 4</h2>
+<ul>
+<li>product knowledge deep dive <span class="nic_link"><a href="https://notes.nicolasdeville.com/b2b-sales/product-knowledge" target="_blank">The importance of product knowledge in B2B sales</a></span></li>
+<li>setting up chat tool for Sales collaboration (eg Slack) <span class="nic_link"><a href="https://notes.nicolasdeville.com/apps/slack" target="_blank">Slack</a></span></li>
+<li>CRM data cleaning &amp; analysis</li>
+<li>sending first cold emails tests</li>
+</ul>
+<h2 id="day-5">Day 5</h2>
+<ul>
+<li>cold emails replies / messaging </li>
+</ul>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>finalise initial Lead Generation Plan, with prioritisation <span class="nic_link"><a href="https://notes.nicolasdeville.com/b2b-sales/lead-generation-plan" target="_blank">Lead Generation Plan</a></span>   </li>
+</ul>
+            <!-- </main> -->
+        </div><!-- /.entry-content -->
+    </article>
+</section>
+
+        <!-- footer -->
+        <section id="extras" class="body" data-pagefind-ignore>
+
+        <!-- /.blogroll -->
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://btobsales.eu">Services: BtoBSales.EU</a></li>
+                            <li><a href="https://indeXall.io">Side project: indeXall.io</a></li>
+                            <li><a href="https://github.com/ndeville">Github: ndeville</a></li>
+                        </ul>
+                </div>
+
+        <!-- /.social -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://www.linkedin.com/in/ndeville/">Linkedin</a></li>
+                            <li><a href="https://www.twitter.com/ndeville">Twitter</a></li>
+                        </ul>
+                </div>
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body" data-pagefind-ignore>
+
+            <address id="about" class="vcard body">
+                <div class="content-row">
+                    <img src="https://notes.nicolasdeville.com/images/logos/pelican-logo.png" alt="pelican" width="16"> Powered by <a href="https://getpelican.com" target="_blank">Pelican</a>
+                    <span class="separator">|</span>
+                    <img src="https://notes.nicolasdeville.com/images/logos/pagefind.png" alt="pagefind" width="16"> Search by <a href="https://pagefind.app" target="_blank">Pagefind</a>
+                    <span class="separator">|</span>
+                    <img src="https://notes.nicolasdeville.com/images/logos/clearbit.png" alt="clearbit" width="16"> Logos by <a href="https://clearbit.com" target="_blank">Clearbit</a>
+                    <span class="separator">|</span>
+                    <img src="https://notes.nicolasdeville.com/images/python.svg" alt="python_logo" width="16"> Made with <a href="https://www.python.org/" target="_blank">Python</a>
+                </div>
+                <div class="content-row">
+                    <img src="https://notes.nicolasdeville.com/favicon.svg" alt="nic_logo" width="24"> Nic's notes
+                </div>
+            </address>
+
+        </footer><!-- /#contentinfo -->
+
+
+<!-- JS -->
+
+<!-- my JS script (with code block copy) -->
+<script src="https://notes.nicolasdeville.com/theme/js/nic.js"></script>
+
+<!-- for Stork seach engine -->
+<!-- <script src="https://files.stork-search.net/stork.js"></script>
+<script>
+    stork.register("sitesearch", "https://notes.nicolasdeville.com/search-index.st")
+</script> -->
+
+<!-- <script>
+    (function() {
+    if( window.innerWidth > 600 ) {
+        var stork_script = document.createElement('script');
+        stork_script.type = 'text/javascript';
+        stork_script.src = 'https://files.stork-search.net/stork.js';
+
+        var stork_register = ('script');
+        stork_register.innerHTML = 'stork.register("sitesearch", "https://notes.nicolasdeville.com/search-index.st")';
+
+        var head = document.getElementsByTagName('head')[0];
+        head.appendChild(stork_script);
+        head.appendChild(stork_register);
+
+
+    }
+    })();
+</script> -->
+
+</body>
+</html>

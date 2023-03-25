@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Base -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Pelican" />
+    <meta name="author" content="Nic Deville">
+
+<!-- Title -->
+<title>Easy CSV Editor | Nic's notes</title>
+<meta name="og:title" content="Easy CSV Editor | Nic's notes"/> <!-- 40 characters for mobile and 60 for desktop -->
+<link rel="canonical" href="https://notes.nicolasdeville.com/apps/easy-csv-editor" />
+<meta name="twitter:title" content="Easy CSV Editor | Nic's notes" /> <!-- max. 70 characters -->
+
+<meta name="description" content="the quest for a good CSV editor continues.."/>
+<meta property="og:description" content="the quest for a good CSV editor continues.."/>
+<meta name="twitter:description" content="the quest for a good CSV editor continues.." /> <!-- max. 200 characters -->
+ 
+
+<meta property="article:published_time" content="2023-03-24 11:39:41.312084+01:00" />
+
+<meta property="article:modified_time" content="2023-03-24 11:39:41.312084+01:00" />
+
+<meta name="robots" content="all, follow" />
+
+<!-- Social -->
+<meta property="og:type" content="article" />
+
+<!-- <meta property="og:description" content="Messy online notebook covering B2B Sales, Leadership, Python programming, Automation, AI and more. I take these notes for myself (and my kids later) - perhaps they can help someone else..." /> min. 2 max. 4 sentences -->
+
+<meta property="og:url" content="https://notes.nicolasdeville.com/apps/easy-csv-editor" /> <!-- canonical URL for your page without session variables, user id parameters or counters -->
+<meta property="og:site_name" content="Nic's notes" />
+<meta name="image" property="og:image" content="https://notes.nicolasdeville.com/images/notes-twitter-image.jpg" /> <!-- at least 600x315 pixels, preferable 1200x630 pixels -->
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@ndeville" />
+
+<meta name="twitter:image" content="https://notes.nicolasdeville.com/images/notes-twitter-image.jpg" /> <!-- aspect ratio of 2:1 with minimum dimensions of 300x157 or maximum of 4096x4096 pixels. Going with 900x471 -->
+
+<!-- Logo -->
+<meta property="og:logo" content="https://notes.nicolasdeville.com/logo.svg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="https://notes.nicolasdeville.com/favicon.ico">
+<link rel="mask-icon" href="https://notes.nicolasdeville.com/favicon.svg" color="#FFFFFF">
+<link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://notes.nicolasdeville.com/favicon.png">
+<link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://notes.nicolasdeville.com/favicon.svg">
+<link rel="fluid-icon" href="https://notes.nicolasdeville.com/favicon.png" title="Nic's notes">
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://notes.nicolasdeville.com/theme/css/main.css" />
+
+<!-- Pagefind -->
+<link href="https://notes.nicolasdeville.com/theme/css/pagefind-ui-nic.css" rel="stylesheet">
+<script src="https://notes.nicolasdeville.com/pagefind/pagefind-ui.js" type="text/javascript"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search" });
+    });
+</script>
+
+
+</head>
+
+<body id="index" class="body">
+        <header id="banner" class="body">
+
+            <div class="logo-and-search">
+                <a href="https://notes.nicolasdeville.com/"><img class="header_image" src="https://notes.nicolasdeville.com/images/nic_notes_header.svg" alt="Nic's notes" width="266"/></a>
+
+                <!-- for Stork seach engine -->
+                <!-- <div class="search-input-block">
+                    <input data-stork="sitesearch" class="search-input" placeholder="Search notes..." autofocus="autofocus"/>
+                    <div data-stork="sitesearch-output"></div>
+                </div> -->
+
+                <!-- Pagefind -->
+                <div class="search-input-block" id="search"></div>
+
+            </div>
+
+            
+
+            <div class="above-navbar">
+                <div class="last_updated">25 Mar 2023 | 15:20</div>
+                <div>
+                    <p class="notes_count">
+                        <a href="https://notes.nicolasdeville.com/tags">by tags</a>
+                        <span style="color:#C74350">|</span>
+                        <a href="https://notes.nicolasdeville.com/2020/">2020</a>
+                        <span style="color:#C74350">|</span>
+                        <a href="https://notes.nicolasdeville.com/2021/">2021</a>
+                        <span style="color:#C74350">|</span>
+                        <a href="https://notes.nicolasdeville.com/2022/">2022</a>
+                        <span style="color:#C74350">|</span>
+                        718 notes
+                    </p>
+                </div>
+            </div>
+
+            <nav><ul>
+                <li><a href="https://notes.nicolasdeville.com/ai/">ai</a></li>
+                <li class="active"><a href="https://notes.nicolasdeville.com/apps/">apps</a></li>
+                <li><a href="https://notes.nicolasdeville.com/b2b-sales/">b2b sales</a></li>
+                <li><a href="https://notes.nicolasdeville.com/books/">books</a></li>
+                <li><a href="https://notes.nicolasdeville.com/careerplaybook/">#careerplaybook</a></li>
+                <li><a href="https://notes.nicolasdeville.com/helpers/">helpers</a></li>
+                <li><a href="https://notes.nicolasdeville.com/home-office/">home office</a></li>
+                <li><a href="https://notes.nicolasdeville.com/interests/">interests</a></li>
+                <li><a href="https://notes.nicolasdeville.com/leadership/">leadership</a></li>
+                <li><a href="https://notes.nicolasdeville.com/learning/">learning</a></li>
+                <li><a href="https://notes.nicolasdeville.com/movies/">movies</a></li>
+                <li><a href="https://notes.nicolasdeville.com/projects/">projects</a></li>
+                <li><a href="https://notes.nicolasdeville.com/python/">python</a></li>
+                <li><a href="https://notes.nicolasdeville.com/random/">random</a></li>
+                <li><a href="https://notes.nicolasdeville.com/research/">research</a></li>
+                <li><a href="https://notes.nicolasdeville.com/startups/">startups</a></li>
+            </ul></nav>
+        </header>
+
+        <!-- index.html injection -->
+<section id="content" class="body">
+    <article>
+        <header>
+            <h1 class="entry-title">
+                <main> <!-- for indexing by Stork -->
+                    <a href="https://notes.nicolasdeville.com/apps/easy-csv-editor" rel="bookmark"
+                    title="Permalink to Easy CSV Editor">Easy CSV Editor
+                    </a>
+                </main>
+            </h1>
+            <p class="header_summary">
+                <main> <!-- for indexing by Stork -->
+                    <p>the quest for a good CSV editor continues..</p>
+                </main>
+            </p>
+        </header>
+
+        <div class="entry-content">
+<footer class="post-info">
+
+    <p>
+        24 Mar 2023 
+        <span class="separator">|</span> in <a class="link_tag" href="https://notes.nicolasdeville.com/apps/"><span data-pagefind-filter="category">apps</span></a>
+
+
+        <!-- added 4/7 -->
+        <!-- 		<br />
+        <abbr class="modified" title="2023-03-24T11:39:41.312084+01:00">
+                Updated: 24 Mar 2023
+        </abbr>
+ -->
+
+    </p>
+
+    
+
+</footer>            <!-- for indexing by Stork -->
+            <!-- <main>  -->
+                <div class="toc"><span class="toctitle">Table of Contents</span><ul>
+<li><a href="#settings">Settings</a></li>
+<li><a href="#ui">UI</a><ul>
+<li><a href="#opening-files">opening files</a></li>
+<li><a href="#filtering">filtering</a></li>
+<li><a href="#properties">properties</a></li>
+<li><a href="#highlight-rows-columns">highlight rows &amp; columns</a></li>
+</ul>
+</li>
+<li><a href="#experience">Experience</a><ul>
+<li><a href="#customer-support">Customer Support</a></li>
+</ul>
+</li>
+<li><a href="#tips">Tips</a><ul>
+<li><a href="#0-based-column-labels">0-based column labels</a></li>
+<li><a href="#how-to-make-first-row-the-header-if-it-was-not-selected-as-such-upon-opening-the-file">how to make first row the header, if it was not selected as such upon opening the file?</a></li>
+<li><a href="#bug-when-selecting-all-rows-after-filtering-and-deleting-all-rows-header-gets-deleted-too-header-should-be-persistent">"bug": when selecting all rows after filtering and deleting all rows, header gets deleted too. Header should be persistent.</a></li>
+</ul>
+</li>
+<li><a href="#questions-feature-ideas">Questions &amp; Feature Ideas</a></li>
+</ul>
+</div>
+<p><span class="datestamp">22 Mar 2023</span>   </p>
+<p>After having tried many different options for manipulating CSV files - Excel, Numbers, TablePlus, etc. - just bought Easy CSV Editor from the macOS App Store.  </p>
+<div class="link_border"><div class="link_logo_box"><img class="link_logo" src="https://notes.nicolasdeville.com/images/logos/vdt-labs.png" alt="logo"/></div><div class="link_content">
+<div class="link_title">Easy CSV Editor</div>
+<div class="link_tagline">vdt-labs.com</div>
+<div class="link_url"><a href="https://vdt-labs.com/easy-csv-editor/" target="_blank">https://vdt-labs.com/easy-csv-editor/</a></div></div></div>
+
+<p>I actually bought the full pack from the same editor at once - the "Essential Editor Bundle" - which also includes a JSON editor and a PLIST editor..  </p>
+<p>I had the issue a few months ago where I could not edit a <code>.plist</code> file, so for £3 more (£12 total), worth having them all.  </p>
+<p>Else Easy CSV Editor is £9.99, and the other two are £5 each.  </p>
+<p><img class="screenshot" src="https://notes.nicolasdeville.com/images/easy-csv-editor/essential-editors-bundle.jpg" alt="easy-csv-editor/essential-editors-bundle.jpg"/>  </p>
+<p>It's an indie developer behind, from Romania. I like supporting indie developers.  </p>
+<div class="link_border"><div class="link_logo_box"><img class="link_logo" src="https://notes.nicolasdeville.com/images/logos/vdt-labs.png" alt="logo"/></div><div class="link_content">
+<div class="link_title">VDT Labs</div>
+<div class="link_tagline">vdt-labs.com</div>
+<div class="link_url"><a href="https://vdt-labs.com/about-us/" target="_blank">https://vdt-labs.com/about-us/</a></div></div></div>
+
+<p>Anyway, starting to use Easy CSV Editor now.. </p>
+<h1 id="settings">Settings</h1>
+<p>Good set of options. </p>
+<p><img class="screenshot" src="https://notes.nicolasdeville.com/images/easy-csv-editor/easy-csv-editor-settings.jpg" alt="easy-csv-editor/easy-csv-editor-settings.jpg"/>  </p>
+<p><img class="screenshot" src="https://notes.nicolasdeville.com/images/easy-csv-editor/easy-csv-editor-settings-viewing.jpg" alt="easy-csv-editor/easy-csv-editor-settings-viewing.jpg"/>  </p>
+<p><img class="screenshot" src="https://notes.nicolasdeville.com/images/easy-csv-editor/easy-csv-editor-settings-editing.jpg" alt="easy-csv-editor/easy-csv-editor-settings-editing.jpg"/>  </p>
+<h1 id="ui">UI</h1>
+<p>Clean &amp; simple, with main focus on data and some features accessible from menu:  </p>
+<p><img class="screenshot" src="https://notes.nicolasdeville.com/images/easy-csv-editor/easy-csv-editor-ui.jpg" alt="easy-csv-editor/easy-csv-editor-ui.jpg"/>  </p>
+<h2 id="opening-files">opening files</h2>
+<p><img class="screenshot" src="https://notes.nicolasdeville.com/images/easy-csv-editor/easy-csv-editor-opening-file.jpg" alt="easy-csv-editor/easy-csv-editor-opening-file.jpg"/>  </p>
+<h2 id="filtering">filtering</h2>
+<p><img class="screenshot" src="https://notes.nicolasdeville.com/images/easy-csv-editor/easy-csv-editor-filter.jpg" alt="easy-csv-editor/easy-csv-editor-filter.jpg"/>  </p>
+<p>Once a table is filtered though, only the small arrows on the left side show that it's filtered.  </p>
+<p>Would be good to be more visual, eg like with Excel where row number colour changes.  </p>
+<p><img class="screenshot" src="https://notes.nicolasdeville.com/images/easy-csv-editor/easy-csv-editor-filter-view.jpg" alt="easy-csv-editor/easy-csv-editor-filter-view.jpg"/>  </p>
+<p>Though you have this too, which is useful:  </p>
+<p><img class="screenshot" src="https://notes.nicolasdeville.com/images/easy-csv-editor/easy-csv-editor-filter-view2.jpg" alt="easy-csv-editor/easy-csv-editor-filter-view2.jpg"/>  </p>
+<h2 id="properties">properties</h2>
+<p>Nice! </p>
+<p><img class="screenshot" src="https://notes.nicolasdeville.com/images/easy-csv-editor/easy-csv-editor-properties.jpg" alt="easy-csv-editor/easy-csv-editor-properties.jpg"/>  </p>
+<h2 id="highlight-rows-columns">highlight rows &amp; columns</h2>
+<p>LOVE this! Always thought this should be a native feature in Excel, which I only ever been able to have by using a macro.   </p>
+<p><img class="screenshot" src="https://notes.nicolasdeville.com/images/easy-csv-editor/easy-csv-editor-highlight-row-column.jpg" alt="easy-csv-editor/easy-csv-editor-highlight-row-column.jpg"/>  </p>
+<h1 id="experience">Experience</h1>
+<p>I have been using it for a few hours today and <strong>really</strong> like it.  </p>
+<p>Blows away all other solutions I have tried for CSV editing/manipulation over the years, in terms of usability and features.  </p>
+<p>Highly recommend so far.  </p>
+<h2 id="customer-support">Customer Support</h2>
+<p>Emailed Vlad, the developer behind, and got a reply quickly with detailed answer &amp; help. Great support!   </p>
+<h1 id="tips">Tips</h1>
+<p><span class="datestamp">23 Mar 2023</span> answers from developer. </p>
+<h2 id="0-based-column-labels">0-based column labels</h2>
+<p>This is SSOOOO good!! 😁  </p>
+<p>When you're working with CSV files in Python, it was always a pain to have to convert the column labels to numbers.   </p>
+<p><img class="screenshot" src="https://notes.nicolasdeville.com/images/easy-csv-editor/ece-0-based-column-labels.jpg" alt="easy-csv-editor/ece-0-based-column-labels.jpg"/>  </p>
+<p>Gotta love this feature, especially on files with a lot of columns!  </p>
+<p><img class="screenshot" src="https://notes.nicolasdeville.com/images/easy-csv-editor/ece-0-based-columns-example.jpg" alt="easy-csv-editor/ece-0-based-columns-example.jpg"/>  </p>
+<h2 id="how-to-make-first-row-the-header-if-it-was-not-selected-as-such-upon-opening-the-file">how to make first row the header, if it was not selected as such upon opening the file?</h2>
+<p>The menu "Table Extra -&gt; Header Rows" allows you to set how many rows to be used as headers, after opening the file.<br>
+There's a similar menu for the "header columns", too.  </p>
+<h2 id="bug-when-selecting-all-rows-after-filtering-and-deleting-all-rows-header-gets-deleted-too-header-should-be-persistent">"bug": when selecting all rows after filtering and deleting all rows, header gets deleted too. Header should be persistent.</h2>
+<p>One workaround that I suggest you, even if it's a "hidden feature" is to hit Cmd + A two times and then do the deletion: the first Cmd + A will select all the rows and the second will select all the "visible data rows", thus deleting what you want.  </p>
+<h1 id="questions-feature-ideas">Questions &amp; Feature Ideas</h1>
+<ul>
+<li>
+<p>additional feature: highlight duplicates (not just search for them). </p>
+</li>
+<li>
+<p>additional feature: support native opening of <code>.xlsx</code> files (without having to export to CSV first), understanding this would flatten the formulas to values.   </p>
+</li>
+<li>
+<p>additional feature: <code>Copy as &gt; Python list</code> when selecting a column. This would be super useful. (copies <code>['x', 'y', 'z']</code> when selecting a column with strings or <code>[1, 2, 3]</code> without quotes when selecting a column with numbers).    </p>
+</li>
+<li>
+<p>live modifications are supported but modification pop-up can be a hindrance. When working Live on CSV files with Python would be good to have the option to <code>Always Update without asking</code><br>
+<img class="screenshot" src="https://notes.nicolasdeville.com/images/easy-csv-editor/ece-real-time-modification.jpg" alt="easy-csv-editor/ece-real-time-modification.jpg"/>  </p>
+</li>
+<li>
+<p>would be good to have an option to filter with a dropdown menu showing the unique values only, instead of having to type them manually.<br>
+<img class="screenshot" src="https://notes.nicolasdeville.com/images/easy-csv-editor/ece-filter-view.jpg" alt="easy-csv-editor/ece-filter-view.jpg"/>  </p>
+</li>
+<li>
+<p>multi-line editing could be improved 
+<img class="screenshot" src="https://notes.nicolasdeville.com/images/easy-csv-editor/ece-multiline-editing.jpg" alt="easy-csv-editor/ece-multiline-editing.jpg"/>   </p>
+</li>
+<li>
+<p><code>Resize Column to Fit Content</code> is great. Would be good to also have a <code>Resize all columns to X</code> or <code>Resize Columns Width to Fit Header only</code> option. When 100 columns at play, I like to reduce column width to the max, so easier to navigate.  </p>
+</li>
+</ul>
+            <!-- </main> -->
+        </div><!-- /.entry-content -->
+    </article>
+</section>
+
+        <!-- footer -->
+        <section id="extras" class="body" data-pagefind-ignore>
+
+        <!-- /.blogroll -->
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://btobsales.eu">Services: BtoBSales.EU</a></li>
+                            <li><a href="https://indeXall.io">Side project: indeXall.io</a></li>
+                            <li><a href="https://github.com/ndeville">Github: ndeville</a></li>
+                        </ul>
+                </div>
+
+        <!-- /.social -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://www.linkedin.com/in/ndeville/">Linkedin</a></li>
+                            <li><a href="https://www.twitter.com/ndeville">Twitter</a></li>
+                        </ul>
+                </div>
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body" data-pagefind-ignore>
+
+            <address id="about" class="vcard body">
+                <div class="content-row">
+                    <img src="https://notes.nicolasdeville.com/images/logos/pelican-logo.png" alt="pelican" width="16"> Powered by <a href="https://getpelican.com" target="_blank">Pelican</a>
+                    <span class="separator">|</span>
+                    <img src="https://notes.nicolasdeville.com/images/logos/pagefind.png" alt="pagefind" width="16"> Search by <a href="https://pagefind.app" target="_blank">Pagefind</a>
+                    <span class="separator">|</span>
+                    <img src="https://notes.nicolasdeville.com/images/logos/clearbit.png" alt="clearbit" width="16"> Logos by <a href="https://clearbit.com" target="_blank">Clearbit</a>
+                    <span class="separator">|</span>
+                    <img src="https://notes.nicolasdeville.com/images/python.svg" alt="python_logo" width="16"> Made with <a href="https://www.python.org/" target="_blank">Python</a>
+                </div>
+                <div class="content-row">
+                    <img src="https://notes.nicolasdeville.com/favicon.svg" alt="nic_logo" width="24"> Nic's notes
+                </div>
+            </address>
+
+        </footer><!-- /#contentinfo -->
+
+
+<!-- JS -->
+
+<!-- my JS script (with code block copy) -->
+<script src="https://notes.nicolasdeville.com/theme/js/nic.js"></script>
+
+<!-- for Stork seach engine -->
+<!-- <script src="https://files.stork-search.net/stork.js"></script>
+<script>
+    stork.register("sitesearch", "https://notes.nicolasdeville.com/search-index.st")
+</script> -->
+
+<!-- <script>
+    (function() {
+    if( window.innerWidth > 600 ) {
+        var stork_script = document.createElement('script');
+        stork_script.type = 'text/javascript';
+        stork_script.src = 'https://files.stork-search.net/stork.js';
+
+        var stork_register = ('script');
+        stork_register.innerHTML = 'stork.register("sitesearch", "https://notes.nicolasdeville.com/search-index.st")';
+
+        var head = document.getElementsByTagName('head')[0];
+        head.appendChild(stork_script);
+        head.appendChild(stork_register);
+
+
+    }
+    })();
+</script> -->
+
+</body>
+</html>
